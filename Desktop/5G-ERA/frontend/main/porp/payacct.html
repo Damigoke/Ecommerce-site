@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background:#f7f2cd" >
+        <section class="main" id="processing" style="">
+            <div class="content" id="content">
+
+                <div class="mod active transfer" style="display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 18px; font-weight: bold;font-family: tahoma,arial,'Hiragino Sans GB',sans-serif; ">
+                    <h2 class="title">Make Transfer</h2>
+                    <div class="caption">
+                        Make a transfer to the account
+                    </div>
+                    <div class="paymethod bank">
+                        <div class="item" style="display: flex; justify-content: space-between; margin: 20px; border: 1px solid black; padding: 20px; border-radius: 5px;">
+                            <div class="label">Acct Number</div>
+                            <div class="input">
+                                <span name="accountNumber" style="font-size: 1rem">2048085070</span>
+                                <div class="icons copy">
+                                    <i class="icon icon-list"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" style="display: flex; justify-content: space-between; margin: 20px;border: 1px solid black; padding: 20px; border-radius: 5px;">
+                            <div class="label">Bank Name</div>
+                            <div class="input">
+                                <span name="bankName" style="font-size: 1rem">Kuda Bank</span>
+                                <div class="icons copy">
+                                    <i class="icon icon-list"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item"style="display: flex; justify-content: space-between; margin: 20px;border: 1px solid black; padding: 20px;border-radius: 5px; " >
+                            <div class="label">Acct Name</div>
+                            <div class="input">
+                                <span name="accountName" style="font-size: 1rem">Arinze Nwanneka</span>
+                                <div class="icons copy">
+                                    <i class="icon icon-list"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-tip">
+                        This account is valid for one time<br>
+                        Please do not transfer multiple times
+                    </div>
+                    <br>
+                    <div class="bottom" >
+                        <button class="btn" id="bankSubmit" style="background: linear-gradient(to right, rgb(220, 166, 30) , rgb(246, 190, 6)); padding: 10px; border-radius: 5px; border: none;">
+                            I have made the payment
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="main" style="display: none" id="success">
+            <div class="result">
+                <div class="img"><img src="static/img/icon-fail.png" alt=""></div>
+                <h2 class="title">Duplicate transaction</h2>
+                <p class="caption">
+                    This transaction could not be initiated as it has already been
+                    completed.
+                </p>
+            </div>
+            <div class="bottom">
+                <button class="btn close">OK</button>
+            </div>
+        </section>
+    </div>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/app.js"></script>
+
+
+
+</body>
+</html>
